@@ -1,0 +1,81 @@
+*{ margin: 0; padding: 0;font-family: 'microsoft yahei';}
+i{font-style: normal;}
+ul,li,dl,ol{list-style: none;}
+.clear:after { clear: both;}
+.clear:before, .clear:after {
+    content: " ";
+    display: table;
+    height: 0;
+    visibility: hidden;
+    font-size: 0;
+}
+
+.field {
+    padding: 9px 0 9px 160px;
+}
+.field-bd {
+    position: relative;
+}
+
+.field-tit {
+    width: 160px;
+    height: 35px;
+    font-size: 14px;
+    color: #666;
+    line-height: 35px;
+    float: left;
+    margin-left: -170px;
+    text-align: right;
+}
+.txt {
+    width: 170px;
+    border: 1px solid #ddd;
+    height: 18px;
+    line-height: 18px;
+    padding: 8px 4px;
+    background-color: #fff;
+    outline: none;
+}
+.txt:focus{
+    border-color: #31c567;
+}
+.txt:disabled,
+button:disabled{
+    background: #f5f5f5;
+}
+.form-error,
+.form-info{
+    display:none;
+    font-size: 14px;
+    color: #666;
+}
+.pwd-status{
+    margin-top: 5px;
+    overflow: hidden;
+}
+.pwd-status span{
+    float: left;
+    width: 60px;
+    height: 20px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    line-height: 20px;
+    background: #b1e9c6;
+}
+.pwd-status .active{
+    background: #31c469;
+}
+.submit{
+    height: 34px;
+    line-height: 34px;
+    padding: 0 25px;
+    font-size: 14px;
+    border: 1px solid #fff;
+    color: white;
+    background-color: #31c567;
+    cursor: pointer
+}
+.top{
+	margin-left:100px;
+}
