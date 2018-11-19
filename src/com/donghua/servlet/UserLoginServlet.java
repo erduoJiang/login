@@ -1,11 +1,14 @@
 package com.donghua.servlet;
 
 import java.io.IOException;
+<<<<<<< HEAD
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
+=======
+>>>>>>> 23e69f5991fa73c7dc4daf37eb88c04320c033c3
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -19,6 +22,7 @@ import com.donghua.biz.UserBiz;
 public class UserLoginServlet extends HttpServlet {
 	
 	private UserBiz ub = new UserBiz();
+<<<<<<< HEAD
 	List<UserInfo> list=ub.getAllUser();
 	
 	
@@ -130,6 +134,47 @@ public class UserLoginServlet extends HttpServlet {
 			request.setAttribute("ALLUSER", ub.find(new String(request.getParameter("find").getBytes("iso-8859-1"),"UTF-8")));
 			request.getRequestDispatcher("index.jsp").forward(request, response);
 		}
+=======
+	
+	
+	
+	public void doPost(HttpServletRequest request,HttpServletResponse response)
+			throws ServletException,IOException {
+		request.setCharacterEncoding("UTF-8");
+		String name = request.getParameter("userName");
+		String pass = request.getParameter("userPass");
+
+		// 通过用户名判断用户名和密码是否正确
+		String result = ub.userAndPassIsTrue(name);
+		if(name != null && pass != null){
+			if(result == null){
+				request.setAttribute("NOTRUEMSG", "<font color='red'>用户名或密码输入错误</font>");
+				request.getRequestDispatcher("login.jsp").forward(request, response);
+				return;
+			}else{
+				if(!pass.equals(result)){
+					request.setAttribute("NOTRUEMSG", "<font color='red'>用户名或密码输入错误</font>");
+					request.getRequestDispatcher("login.jsp").forward(request, response);
+					return;
+				}
+			}
+		}
+		
+		UserInfo ui = new UserInfo();
+		ui.setUserName(name);
+		ui.setUserPass(pass);
+		ui = ub.checkLogin(ui);
+		if(ui == null){
+//			request.setAttribute("ERRORMSG", "<font color='red'>请登录后访问</font>");
+			request.getRequestDispatcher("login.jsp").forward(request, response);
+			
+		}else{
+			request.setAttribute("USERINFO", ui);
+			request.getRequestDispatcher("index.jsp").forward(request, response);
+			
+		}
+		
+>>>>>>> 23e69f5991fa73c7dc4daf37eb88c04320c033c3
 	}
 }
 

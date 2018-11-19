@@ -10,7 +10,11 @@
 </head>
 <body>
 
+<<<<<<< HEAD
 <form action="checkLogin?type=login" class="form" id="form" method="post">
+=======
+<form action="checkLogin" class="form" id="form" method="post">
+>>>>>>> 23e69f5991fa73c7dc4daf37eb88c04320c033c3
 <div class="top"><p id="notrue"><%=request.getAttribute("NOTRUEMSG")==null?"":request.getAttribute("NOTRUEMSG") %></p></div>
   <ul class="fieldset"> 
       <li class="field"> 

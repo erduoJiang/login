@@ -4,8 +4,11 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+<<<<<<< HEAD
 import java.util.ArrayList;
 import java.util.List;
+=======
+>>>>>>> 23e69f5991fa73c7dc4daf37eb88c04320c033c3
 
 import com.donghua.bean.UserInfo;
 import com.donghua.db.DBManager;
@@ -79,6 +82,7 @@ public class UserInfoDAO {
 		return resuPass;
 	}
 	
+<<<<<<< HEAD
 	/**
 	 * 获取所有用户信息
 	 * */
@@ -224,4 +228,6 @@ public class UserInfoDAO {
 		
 		return list;
 	}
+=======
+>>>>>>> 23e69f5991fa73c7dc4daf37eb88c04320c033c3
 }

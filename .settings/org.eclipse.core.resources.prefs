@@ -1,9 +1,15 @@
 eclipse.preferences.version=1
 encoding//WebContent/check.js=UTF-8
 encoding//WebContent/css/loginStyles.css=UTF-8
+<<<<<<< HEAD
 encoding//WebContent/delete.jsp=UTF-8
 encoding//WebContent/index.jsp=UTF-8
 encoding//WebContent/js/formCheck.js=UTF-8
 encoding//WebContent/login.jsp=UTF-8
 encoding//WebContent/modify.jsp=UTF-8
 encoding//src/com/donghua/servlet/UserLoginServlet.java=UTF-8
+=======
+encoding//WebContent/index.jsp=UTF-8
+encoding//WebContent/js/formCheck.js=UTF-8
+encoding//WebContent/login.jsp=UTF-8
+>>>>>>> 23e69f5991fa73c7dc4daf37eb88c04320c033c3

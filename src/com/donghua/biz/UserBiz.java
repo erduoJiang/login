@@ -1,7 +1,10 @@
 package com.donghua.biz;
 
+<<<<<<< HEAD
 import java.util.List;
 
+=======
+>>>>>>> 23e69f5991fa73c7dc4daf37eb88c04320c033c3
 import com.donghua.bean.UserInfo;
 import com.donghua.dao.UserInfoDAO;
 
@@ -14,6 +17,7 @@ public class UserBiz {
 	public String userAndPassIsTrue(String userName){
 		return uiDao.userAndPassIsTrue(userName);
 	}
+<<<<<<< HEAD
 	
 	public List<UserInfo> getAllUser(){
 		
@@ -36,4 +40,6 @@ public class UserBiz {
 		
 		return uiDao.find(name);
 	}
+=======
+>>>>>>> 23e69f5991fa73c7dc4daf37eb88c04320c033c3
 }

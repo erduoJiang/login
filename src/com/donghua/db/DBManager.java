@@ -48,6 +48,7 @@ public class DBManager {
 			e.printStackTrace();
 		}
 	}
+<<<<<<< HEAD
 	/**
 	 * 更新操作专用关闭方法
 	 * @param conn
@@ -62,4 +63,6 @@ public class DBManager {
 			System.out.println(e.getMessage());
 		}
 	}
+=======
+>>>>>>> 23e69f5991fa73c7dc4daf37eb88c04320c033c3
 }
